@@ -1,63 +1,316 @@
-<!DOCTYPE html >
-<html >
+<html>
+<meta charset="utf-8"/>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>我的驿站</title>
-<link href="images/css.css" rel="stylesheet" type="text/css" />
-<style type="text/css">
- 
-</style>
+  <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="main.css" rel="stylesheet"/>
 </head>
- 
-<body>
-<table width="100%" border="0" cellpadding="0" cellspacing="0" class="nav">
-  <tr>
-    <td><img src="images/logo2.png"  height="100" /></td>
-    <td width="100" align="center"><a href="index.html">主页</a></td>
-    <td width="100" align="center"><a href="haoyou.html">我的偶像</a></td>
-    <td width="100" align="center"><a href="photo.html">我的相册</a></td>
-    <td width="100" align="center"><a href="rizhi.html">我的日志</a></td>
-    <td width="100" align="center"><a href="yinyue.html">我的音乐</a></td>
-  </tr>
-</table>
-<table width="800" border="0" align="center" cellpadding="0" cellspacing="0" class="main">
-  <tr>
-    <td></td>
-  </tr>
-  <tr>
-    <td><table width="760" border="0" cellspacing="10" cellpadding="0">
-      <tr>
-        <td><p >我的个人简介。 </p>
-          <p >姓名：lz</p>
-          <p >性别：男</p>
-          <p >生日：0809</p>
-          <p >学校：某某大学</p>
-          <p >爱好：摄影，乒乓球，学习，王者荣耀</p>
-          <p >你看&#8212;&#8212;</p></td>
-        <td><img src="images/1.jpg" width="383" height="289" /></td>
-      </tr>
-      <tr>
-        <td><img src="images/2.jpg" width="400" /></td>
-        <td>
-          <p >好吧，我承认我兴趣广泛。 </p>
-          <p >包括吃喝玩乐睡。 </p>
-          <p >当然还有一些低调奢华有内涵的部分了。 </p>
-          <p >什么没事捧着我的小单反出去摄摄影啦。 </p>
-          <p >闲的无聊用手捣鼓两下我的小钢琴啦。 </p>
-          <p ></p></td>
-      </tr>
-      <tr>
-        <td><p >什么吉他，竹笛，那都不在话下。嘿嘿。 </p>
-          <p >是不是很崇拜我啊。 </p>
-          <p >恩。。。我的朋友很多。但是敌人也很多。          </p>
-          <p >综上所述要想更多地了解我，就来看看我的小世界吧。 </p></td>
-        <td><img src="images/3.jpg" width="400" /></td>
-      </tr>
-    </table></td>
-  </tr>
-  <tr>
-    <td>&nbsp;</td>
-  </tr>
-</table>
+<body style="">
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header" style="margin:0px 50px 0px 0px;">
+        <a href="#" class="navbar-brand"><i class="glyphicon glyphicon-home"></i> 孟立豪的主页</a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a id="skillTreeBar" href="#"><i class="glyphicon glyphicon-tree-deciduous"></i> 技能树</a></li>
+          <li class=""><a id="websitNavBar" href="#"><i class="glyphicon glyphicon-link"></i> 网址导航</a></li>
+          <li class=""><a href="./blog/bloghome.html"><i class="glyphicon glyphicon-file"></i> 个人博客</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="./life/m-baby/picwall2.html">生活区</a></li>
+          <li><a href="#">联系我</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div id="skill-tree" class="container" style="height:auto; border:1px rgba(148, 144, 147, 0.5);margin:50px auto;">
+    <div class="row">
+        <div class="title col-md-1">
+          后台
+        </div>
+        <div class="hr-divider col-md-12"></div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="block-info">
+            <div class="block-info-header" style="background-color:#c96f01">
+              <a href="https://www.oracle.com/java/index.html" target="_blank"><img src="./img/java.jpg" style="width:60%;" class="img-circle"/></a>
+            </div>
+            <div class="block-info-body">
+              <div class="block-info-body-title">
+                <a href="https://www.oracle.com/java/index.html" target="_blank">java</a>
+              </div>
+              <div class=block-info-body-content>
+                Java是一门面向对象编程语言，不仅吸收了C++语言的各种优点...
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="block-info">
+            <div class="block-info-header" style="background-color:#6eb33f">
+              <a href="https://spring.io/" target="_blank"><img src="./img/spring.jpg" style="width:80%;" class="img-circle"></a>
+            </div>
+            <div class="block-info-body">
+              <div class="block-info-body-title">
+                <a href="https://spring.io/" target="_blank">spring</a>
+              </div>
+              <div class=block-info-body-content>
+                Spring是一个轻量级的Java 开发框架。是一个分层的JavaSE/EEfull-stack框架...
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="block-info">
+            <div class="block-info-header" style="background-color:#d20000">
+              <a href="http://blog.mybatis.org/"><img src="./img/mybatis.jpg" style="width:100%;" class=""></a>
+            </div>
+            <div class="block-info-body">
+              <div class="block-info-body-title">
+                <a href="http://blog.mybatis.org/">mybatis</a>
+              </div>
+              <div class=block-info-body-content>
+                MyBatis是支持普通SQL查询，存储过程和高级映射的优秀持久层框架...
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="block-info">
+            <div class="block-info-header" style="background-color:#376d9b">
+              <a href="https://www.python.org/"><img src="./img/python2.jpg" style="width:58%;" class="img-circle"></a>
+            </div>
+            <div class="block-info-body">
+              <div class="block-info-body-title">
+                <a href="https://www.python.org/">python</a>
+              </div>
+              <div class=block-info-body-content>
+                Python具有丰富和强大的库。它常被昵称为胶水语言，能够把用其他语言制作的各种模块...
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="block-info">
+            <div class="block-info-header" style="background-color:#6eb33f">
+              <img src="./img/spring.jpg" style="width:80%;" class="img-circle">
+            </div>
+            <div class="block-info-body">
+              <div class="block-info-body-title">
+                <a href="#">spring</a>
+              </div>
+              <div class=block-info-body-content>
+                Spring是一个轻量级的Java 开发框架。是一个分层的JavaSE/EEfull-stack框架...
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+          <div class="title col-md-1">
+            前端
+          </div>
+          <div class="hr-divider col-md-12"></div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="block-info">
+            <div class="block-info-header" style="background-color:#6eb33f">
+              <img src="./img/jquery.jpg" style="width:100%;height:100%" class="">
+            </div>
+            <div class="block-info-body">
+              <div class="block-info-body-title">
+                <a href="http://jquery.com/">jquery</a>
+              </div>
+              <div class=block-info-body-content>
+                jQuery是一个快速、简洁的JavaScript框架，是继Prototype之后又一个优秀的JavaScript代码库...
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="block-info">
+            <div class="block-info-header" style="background-color:#6eb33f">
+              <img src="./img/bootstrap.jpg" style="width:77%;" class="img-circle">
+            </div>
+            <div class="block-info-body">
+              <div class="block-info-body-title">
+                <a href="https://getbootstrap.com/">bootstrap</a>
+              </div>
+              <div class=block-info-body-content>
+                Bootstrap，来自Twitter，是目前很受欢迎的前端框架。Bootstrap基于HTML、CSS、JAVASCRIPT...
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="block-info">
+            <div class="block-info-header" style="background-color:#6eb33f">
+              <img src="./img/vue.jpg" style="width:100%;height:100%" class="">
+            </div>
+            <div class="block-info-body">
+              <div class="block-info-body-title">
+                <a href="https://cn.vuejs.org/">Vue.js</a>
+              </div>
+              <div class=block-info-body-content>
+                Vue.js是一个构建数据驱动的 web 界面的渐进式框架...
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="block-info">
+            <div class="block-info-header" style="background-color:#6eb33f">
+              <img src="./img/anglarJs.jpg" style="width:100%;height: 100%" class="">
+            </div>
+            <div class="block-info-body">
+              <div class="block-info-body-title">
+                <a href="https://angularjs.org/">AngularJS</a>
+              </div>
+              <div class=block-info-body-content>
+                AngularJS是一款优秀的前端JS框架最为核心的是：MVC、模块化、自动化双向数据绑定、语义化标签、依赖注入...
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <!--网址导航-->
+  <div id="websit-nav" class="container" style="display:none;height:100%;margin:50px auto;">
+    <div class="row">
+    <div class="title col-md-1">
+      在线文档
+    </div>
+    <div class="hr-divider col-md-12"></div>
+    <div class="row" style="margin-left:15px;">
+    <div class="link-container link-container-top col-md-3">
+      <a href="http://tool.oschina.net/apidocs/apidoc?api=jdk-zh" target="_blank">JDK在线文档</a>
+    </div>
+    <div class="link-container link-container-top col-md-3">
+      <a href="http://shouce.jb51.net/spring/" target="_blank">spring开发参考手册</a>
+    </div>
+    <div class="link-container link-container-top col-md-3">
+      <a href="http://tool.oschina.net/apidocs" target="_blank">在线API文档</a>
+    </div>
+    <div class="link-container link-container-top col-md-3">
+      <a href="http://www.jb51.net/shouce/jquery1.82/" target="_blank">jquery在线文档</a>
+    </div>
+   </div>
+   <div class="row" style="margin-left:15px;">
+   <div class="link-container link-container-bottom col-md-3">
+     <a href="http://www.runoob.com/bootstrap/bootstrap-tutorial.html" target="_blank">bootstrap在线教程</a>
+   </div>
+   <div class="link-container link-container-bottom col-md-3">
+     <a href="http://www.pythondoc.com/" target="_blank">python在线文档</a>
+   </div>
+   <div class="link-container link-container-bottom col-md-3">
+     <a href="#" target="_blank">JDK在线文档</a>
+   </div>
+   <div class="link-container link-container-bottom col-md-3">
+     <a href="#" target="_blank">JDK在线文档</a>
+   </div>
+    </div>
+    </div>
+    <div class="row">
+    <div class="title col-md-1">
+      课堂
+    </div>
+    <div class="hr-divider col-md-12"></div>
+    <div class="row" style="margin-left:15px;">
+    <div class="link-container link-container-top col-md-3">
+      <a href="http://www.imooc.com/course/landingpagephp?from=phpkecheng" target="_blank">慕课网</a>
+    </div>
+    <div class="link-container link-container-top col-md-3">
+      <a href="#">JDK在线文档</a>
+    </div>
+    <div class="link-container link-container-top col-md-3">
+      <a href="#">JDK在线文档</a>
+    </div>
+    <div class="link-container link-container-top col-md-3">
+      <a href="#">JDK在线文档</a>
+    </div>
+   </div>
+   <div class="row" style="margin-left:15px;">
+   <div class="link-container link-container-bottom col-md-3">
+     <a href="#">JDK在线文档</a>
+   </div>
+   <div class="link-container link-container-bottom col-md-3">
+     <a href="#">JDK在线文档</a>
+   </div>
+   <div class="link-container link-container-bottom col-md-3">
+     <a href="#">JDK在线文档</a>
+   </div>
+   <div class="link-container link-container-bottom col-md-3">
+     <a href="#">JDK在线文档</a>
+   </div>
+    </div>
+    </div>
+
+    <div class="row">
+    <div class="title col-md-1">
+      博客
+    </div>
+    <div class="hr-divider col-md-12"></div>
+    <div class="row" style="margin-left:15px;">
+    <div class="link-container link-container-top col-md-3">
+      <a href="https://my.oschina.net/mlh3823/blog" target="_blank">mlh3823-oschina</a>
+    </div>
+    <div class="link-container link-container-top col-md-3">
+      <a href="http://liyong.ac.cn/">liyong-oschina</a>
+    </div>
+    <div class="link-container link-container-top col-md-3">
+      <a href="http://www.liaoxuefeng.com/">廖雪峰主页</a><span class="seal-box">牛人博客<span>
+    </div>
+    <div class="link-container link-container-top col-md-3">
+      <a href="#">JDK在线文档</a>
+    </div>
+   </div>
+   <div class="row" style="margin-left:15px;">
+   <div class="link-container link-container-bottom col-md-3">
+     <a href="#">JDK在线文档</a>
+   </div>
+   <div class="link-container link-container-bottom col-md-3">
+     <a href="#">JDK在线文档</a>
+   </div>
+   <div class="link-container link-container-bottom col-md-3">
+     <a href="#">JDK在线文档</a>
+   </div>
+   <div class="link-container link-container-bottom col-md-3">
+     <a href="#">JDK在线文档</a>
+   </div>
+    </div>
+    </div class="row">
+    </div>
+    </div>
+  <!--网址导航-->
+
+
+  <a href="#" style="display:inline-block;background-color:rgb(121, 120, 113);padding:10px 5px;position:fixed;bottom:100px;right:5px;color:white;text-decoration:none;">
+    返回顶部
+  </a>
+  <footer class="footer" style="margin-bottom:0px;background-color:#333;color:#aaa;">
+    <div class="container">
+    <div class="col-md-6 text-center">
+      <h3>个人主页</h3>
+      <h5>&copy 2017 by lowpitched</h5>
+    </div>
+    <div class="col-md-6">
+      <div class="col-md-2">
+        <h5>关于</h5>
+        <a href="#">关于我们</a>
+        <a href="#">详细</a>
+      </div>
+      <div class="col-md-2">
+        <h5>友情链接</h5>
+        <a href="https://github.com/lowpitched">github</a>
+      </div>
+      <div class="col-md-2">
+        <h5>联系我们</h5>
+      </div>
+    </div>
+    <div>
+  </footer>
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
 </body>
 </html>
+
